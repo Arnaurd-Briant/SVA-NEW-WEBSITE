@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style/bootstrap.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom Theme CSS -->
+    <link rel="stylesheet" href="./style/theme.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.svg">
+
+    <title>Silicon Valley Of Africa</title>
+  </head>
+  <body>
+    
+    <style>
+      .logo-img {
+        transform: scale(2.5); /* Scale the logo by 150% (2.5 times its size) */
+        height: auto; /* Maintain aspect ratio */
+        width: auto;  /* Ensure the logo doesn't stretch disproportionately */
+        max-width: 100%; /* Prevent the logo from going beyond the width of its container */
+        margin-left: 0; /* Ensure the logo is aligned properly on the left */
+        display: block; /* Ensure it is treated as a block element */
+      }
+    </style>
+    
+    <style>
+      /* Reset the logo styling to default */
+      .logo-img {
+        height: auto;  /* Maintain aspect ratio */
+        width: 100%;   /* Default width to fit the container */
+        max-width: 200px; /* Optionally, set a max width if you want to limit the size */
+      }
+    </style>
+    
+    <style>
+      /* Reduce the size of the logo */
+      .logo-img {
+        height: auto;  /* Maintain aspect ratio */
+        width: 100%;   /* Default width to fit the container */
+        max-width: 120px; /* Reduce the max width to make the logo smaller */
+      }
+    </style>
+    
+    <style>
+      /* Further reduce the size of the logo */
+      .logo-img {
+        height: auto;  /* Maintain aspect ratio */
+        width: 100%;   /* Default width to fit the container */
+        max-width: 100px; 
+        margin-left: 100px;/* Reduce the max width to make the logo smaller */
+      }
+    </style>
+    
+    <canvas id="dustCanvas" class="w-100"></canvas>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-blur sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="./assets/imgs/Simplification.svg" alt class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-light d-none d-sm-block theme-cta">
+          Events
+          <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="#ffffff" viewBox="0 0 256 256">
+            <path
+              d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    
+    
+
+    <!-- Hero Section -->
+
+    <div id="hero-section">
+      <div class="hero-title mx-auto text-center px-5 pt-5">
+        <h1 class="hero-heading px-5">REVOLUTIONIZING AFRICA WITH CUTTING-EDGE TECHNOLOGY.
+         </h1>
+         <br><br>
+        <div class="hero-subtitle mt-3">
+          <p class="mb-0 hero-subheading">Silicon Valley of Africa drives innovation in Technology, empowering tech leaders to shape Africa’s future.</p>
+          <p class="mb-0 hero-subheading">Beyond Imagination.</p>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text">Scroll down</span>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+
+    <section id="about-us" class="w-100">
+      <div class="about-us-content container py-5">
+        <div class="section-heading text-center">
+          <p class="mb-3">Who we are</p>
+          <h3>Epic Beginnings: Unveiling Our Essence, Crafting Futures with
+            Excellence.</h3>
+        </div>
+        <div class="about-us-info row w-100 py-5 my-5">
+          <div class="col-xl-6">
+            <div class="about-us-img">
+              <img class="img-fluid1" src="./assets/imgs/about-us.png" alt>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div
+              class="about-us-content d-flex flex-column h-100 justify-content-between">
+              <div class="about-us-text">
+                <p class="paragraph-quote mb-4">Empowering Progress: Our Story,
+                  Your Journey, Shared Excellence.</p>
+          
+                <p class="mb-4">Silicon Valley of Africa (SVA) is a pioneering technology hub committed to driving innovation and empowering Africa’s digital future. As a dynamic organization, we foster creativity, collaboration, and cutting-edge solutions to solve the continent's most pressing challenges. We bring together visionary developers, entrepreneurs, and innovators to transform ideas into impactful solutions that shape industries and communities. With a focus on sustainability, growth, and innovation, SVA is leading the charge in positioning Africa as a global tech powerhouse.</p>
+                
+              </div>
+              <div class="about-us-cta">
+                <button class="btn btn-outline-light theme-cta">
+                  Who we are
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="#ffffff" viewBox="0 0 256 256">
+                    <path
+                      d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter Section -->
+
+    <section id="counter-section" class="bg-theme-dark">
+      <div class="container-fluid py-3">
+        <div class="row w-100 justify-content-center">
+          <div class="col-xl-3 text-center number-counter">
+            <h1 class="counter mb-4" data-target="100" data-label="+">0</h1>
+            <p>Youth Empowered</p>
+          </div>
+          <div class="col-xl-3 text-center number-counter">
+            <h1 class="counter mb-4" data-target="98" data-label="%">0</h1>
+            <p>Successful Years</p>
+          </div>
+          <div class="col-xl-3 text-center number-counter">
+            <h1 class="counter mb-4" data-target="15" data-label="+">0</h1>
+            <p>Project Ongoing </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- IT Solution Section  -->
+
+   <section id="IT-solution" class="py-5">
+  <div class="IT-solution-content container py-5">
+    <div class="section-heading text-center">
+      <p class="mb-3">Real-world Solutions</p>
+      <h3>We leverage cutting-edge technology to solve complex problems and drive global progress.</h3>
+    </div>
+    <div class="TI-solution-cards row w-100 py-4 my-5">
+      <div class="col-xl-3 d-flex">
+        <div class="card w-100 h-100 d-flex flex-column">
+          <div class="card-icon mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 256 256">
+              <path d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88Z"></path>
+            </svg>
+          </div>
+          <p class="solution-title fs-4 mt-3 text-center">My Doctor AI</p>
+          <hr class="my-4">
+          <p class="flex-grow-1">My Doctor AI offers personalized and accessible health management solutions through advanced artificial intelligence, empowering users to track their health, analyze symptoms, and access tailored medical information and advice anytime, anywhere.</p>
+        </div>
+      </div>
+      <div class="col-xl-3 d-flex">
+        <div class="card w-100 h-100 d-flex flex-column">
+          <div class="card-icon mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 256 256">
+              <path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Z"></path>
+            </svg>
+          </div>
+          <p class="solution-title fs-4 mt-3 text-center">Military AI</p>
+          <hr class="my-4">
+          <p class="flex-grow-1">Military AI provides advanced, real-time solutions for defense and security management, utilizing cutting-edge artificial intelligence to enhance tactical decision-making, monitor threats, and deliver actionable intelligence for military personnel, ensuring optimal performance and safety in any operational environment.</p>
+        </div>
+      </div>
+      <div class="col-xl-3 d-flex">
+        <div class="card w-100 h-100 d-flex flex-column">
+          <div class="card-icon mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 256 256">
+              <path d="M220.27,158.54a8,8,0,0,0-7.7-.46,20,20,0,1,1,0-36.16A8,8,0,0,0,224,114.69V72a16,16,0,0,0-16-16H171.78a35.36,35.36,0,0,0,.22-4,36.11,36.11,0,0,0-11.36-26.24"></path>
+            </svg>
+          </div>
+          <p class="solution-title fs-4 mt-3 text-center">Robotics</p>
+          <hr class="my-4">
+          <p class="flex-grow-1">FRC Ladybug leads the way in African robotics, pioneering innovation through FRC while also fostering STEM engagement in FTC and FLL, empowering the next generation of engineers and problem solvers through hands-on robotics challenges.</p>
+        </div>
+      </div>
+      <div class="col-xl-3 d-flex">
+        <div class="card w-100 h-100 d-flex flex-column">
+          <div class="card-icon mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 256 256">
+              <path d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0"></path>
+            </svg>
+          </div>
+          <p class="solution-title fs-4 mt-3 text-center">WIN Hackathons</p>
+          <hr class="my-4">
+          <p class="flex-grow-1">WIN Hackathon is an innovative platform designed to foster tech skills and creativity by organizing hackathons that empower participants to collaborate, solve real-world problems, and sharpen their coding and problem-solving abilities in a dynamic, competitive environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Our Services -->
+
+    <section id="our-services" class="py-5">
+      <div class="our-services-content container py-5">
+        <div class="section-heading text-center">
+          <p class="mb-3">Our Programs</p>
+          <h3>Our program combines innovation and technology to address pressing global challenges and create impactful solutions.</h3>
+        </div>
+        <div class="our-services-according row w-100 py-4 my-5 px-5">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <span class="accordion-title">01</span>
+                  <span class="accordion-title ms-4">SVA summer camp</span>
+                  <span class="ms-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                      height="32" fill="#ffffff" viewBox="0 0 256 256"
+                      stroke-width="2" stroke="#45ds65">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse"
+                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="accordion-body-description">
+                    <p class="service-description mb-0">
+                      Join us for an exciting summer camp where we provide hands-on learning experiences in emerging tech skills, including AI, robotics, coding, blockchain, IoT, and digital innovation, empowering you to explore the future of technology and develop essential skills for the digital age.
+                    </p>
+                  </div>
+                  <div class="accordion-horizontal-scroll mt-4 d-flex gap-3">
+                    <div class="service-img">
+                      <img class="img-fluid" src="./assets/imgs/AI.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid"
+                        src="./assets/imgs/Blockchain1.jpg" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid"
+                        src="./assets/imgs/dedicated-dev.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid" src="./assets/imgs/mobile-dev.png"
+                        alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingtwo">
+                <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapsetwo"
+                  aria-expanded="true" aria-controls="collapsetwo">
+                  <span class="accordion-title">02</span>
+                  <span class="accordion-title ms-4">HHO Engine</span>
+                  <span class="ms-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                      height="32" fill="#ffffff" viewBox="0 0 256 256"
+                      stroke-width="2" stroke="#45ds65">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse"
+                aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="accordion-body-description">
+                    <p class="service-description mb-0">
+                      Empower your business with the limitless potential of AI.
+                      From developing intelligent chatbots to implementing
+                      machine learning algorithms, we provide innovative
+                      solutions that automate processes, enhance
+                      decision-making, and drive unparalleled efficiency. Let us
+                      help you stay ahead in the era of smart technologies.
+                    </p>
+                  </div>
+                  <div class="accordion-horizontal-scroll mt-4 d-flex gap-3">
+                    <div class="service-img">
+                      <img class="img-fluid" src="./assets/imgs/AI.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid"
+                        src="./assets/imgs/frontend-dev.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid"
+                        src="./assets/imgs/dedicated-dev.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid" src="./assets/imgs/mobile-dev.png"
+                        alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingthree">
+                <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapsethree"
+                  aria-expanded="true" aria-controls="collapsethree">
+                  <span class="accordion-title">03</span>
+                  <span class="accordion-title ms-4">Re-generative brakes</span>
+                  <span class="ms-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                      height="32" fill="#ffffff" viewBox="0 0 256 256"
+                      stroke-width="2" stroke="#45ds65">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h2>
+              <div id="collapsethree" class="accordion-collapse collapse show"
+                aria-labelledby="headingthree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="accordion-body-description">
+                    <p class="service-description mb-0">
+                      Empower your business with the limitless potential of AI.
+                      From developing intelligent chatbots to implementing
+                      machine learning algorithms, we provide innovative
+                      solutions that automate processes, enhance
+                      decision-making, and drive unparalleled efficiency. Let us
+                      help you stay ahead in the era of smart technologies.
+                    </p>
+                  </div>
+                  <div class="accordion-horizontal-scroll mt-4 d-flex gap-3">
+                    <div class="service-img">
+                      <img class="img-fluid" src="./assets/imgs/AI.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid"
+                        src="./assets/imgs/frontend-dev.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid"
+                        src="./assets/imgs/dedicated-dev.png" alt>
+                    </div>
+                    <div class="service-img">
+                      <img class="img-fluid" src="./assets/imgs/mobile-dev.png"
+                        alt>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+                  <!-- Add More Testimonials by duplicating `item` div -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="get-in-touch" class="py-5">
+      <div class="our-services-content container py-5">
+        <div class="our-services-according row w-100">
+          <div class="col-xl-6">
+            <div
+              class="contact-form-container d-flex flex-column justify-content-between">
+              <div class="section-heading w-75 mx-0 my-0">
+                <h3>Your Vision, Our Mission: Let's Shape Success Together.</h3>
+              </div>
+              <div class="form-content d-flex flex-column gap-2">
+                <div class="name-input">
+                  <input type="email" class="form-control"
+                    id="exampleInputEmail1" placeholder="Name">
+                </div>
+                <div class="company-name-input">
+                  <input type="email" class="form-control"
+                    id="exampleInputEmail1" placeholder="Company Name">
+                </div>
+                <div class="email-input">
+                  <input type="email" class="form-control"
+                    id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Email">
+                </div>
+                <div class="desc-input">
+                  <textarea class="form-control"
+                    placeholder="Describe your requirement"
+                    id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+              </div>
+              <div class="contact-cta">
+                <button class="btn btn-fill-primary">
+                  <span>Submit</span>
+                  <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="#121212" viewBox="0 0 256 256">
+                    <path
+                      d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="section-heading w-75 mx-0 my-0">
+              <p class="mb-3">Get in Touch</p>
+              <h3>Connect for Excellence: Your Gateway to Exceptional
+                Solutions.</h3>
+            </div>
+            <div class="row w-100 px-0 mt-5">
+              <div class="col-xl-6 mb-4">
+                <div
+                  class="address-container d-flex flex-column justify-content-between">
+                  <div class="flag">
+                    <img src="./assets/imgs/IN.png" alt class="img-fluid">
+                  </div>
+                  <div class="address-title">
+                    <p class="text-secondary">Development Office</p>
+                  </div>
+                  <div class="address-desc text-primary">
+                    <p>FabLab Rwanda <br>
+                      44 KG 548 Street, Kacyiru,<br> Kigali, Rwanda. <br>
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 mb-4">
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section class="marqquee-section">
+      <div class="marquee-container">
+        <div class="gradient"></div>
+        <div class="marquee">
+            <span><img src="assets/imgs/fab.jpeg" alt="fablab rwanda"></span>
+            <span><img src="assets/imgs/ict.png " class="ict-chamber"></span>
+            <span><img src="assets/imgs/first comp.png  "></span>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <div class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/"
+            class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use
+                xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-muted">© 2025</p>
+        </div>
+
+        <div class="col mb-3">
+
+        </div>
+
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#"
+                class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#"
+                class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#"
+                class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#"
+                class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#"
+                class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        
+      </footer>
+    </div>
+
+    <!-- <section id="our-services" class="py-5">
+      <div class="our-services-content container py-5">
+        <div class="section-heading text-center">
+          <p class="mb-3">🚧 Section Coming Soon 🚧</p>
+          <h3>This section is under development. Stay tuned for updates!</h3>
+        </div>
+        <div class="our-services-according row w-100 py-4 my-5">
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Marquee Section -->
+
+
+     
+
+    <!-- jQuery (required by Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Bundle (if you need Bootstrap's JavaScript functionality) -->
+    <script src="./script/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./script/owl.carousel.js"></script>
+
+    <!-- Swiper (if you need Swiper for other sections) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Owl Carousel Initialization -->
+    <script src="./script/owlcarousel.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script src="./script/swiper.js"></script>
+
+    <!-- Custom Main Scripts -->
+    <script src="./script/main.js"></script>
+
+    <!-- Dust Animation -->
+    <script src="./script/dustAnimation.js"></script>
+
+  </body>
+</html>
